@@ -16,7 +16,7 @@ def filtration_list(load_file):
 
 def sorted_date(json_file):
     """Эта функция сортирует список словарей в убывающем порядке дат, преобразованных в необходимый формат"""
-    json_sort = sorted(json_file,key=lambda x: datetime.strptime(x['date'],'%Y-%m-%dT%H:%M:%S.%f'), reverse=True)
+    json_sort = sorted(json_file, key=lambda x: datetime.strptime(x['date'], '%Y-%m-%dT%H:%M:%S.%f'), reverse=True)
     return json_sort
 
 
@@ -38,3 +38,19 @@ def get_num(num):
 def get_sum(cash):
     """Эта функция возвращает сумму и наименование валюты из словаря"""
     return f'{cash["operationAmount"]["amount"]} {cash["operationAmount"]["amount"]["name"]}'
+
+
+def get_main(num_operations=5):
+    file_name = "operations.json"
+    load_file = getting_file(file_name)
+    filtered_file = filtration_list(load_file)
+    sorted_file = sorted_date(filtered_file)
+    for operation in sorted_file:
+        if num_operations == 0:
+            break
+        print(get_date(operation["date"]), operation["description"])
+        if operation["description"] != "Открытие вклада":
+            print(get_num(operation["from"]) + " -> ", end="")
+        print(get_num(operation["to"]))
+        print(get_sum(operation), "\n")
+        num_operations -= 1
