@@ -18,3 +18,8 @@ def sorted_date(json_file):
     """Эта функция сортирует список словарей в убывающем порядке дат, преобразованных в необходимый формат"""
     json_sort = sorted(json_file,key=lambda x: datetime.strptime(x['date'],'%Y-%m-%dT%H:%M:%S.%f'), reverse=True)
     return json_sort
+
+
+def get_date(date):
+    """Эта функция преобразует дату в короткий вид"""
+    return f"{date[8:10]}.{date[5:7]}.{date[:4]}"
