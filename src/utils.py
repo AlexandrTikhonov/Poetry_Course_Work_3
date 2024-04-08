@@ -37,7 +37,7 @@ def get_num(num):
 
 def get_sum(cash):
     """Эта функция возвращает сумму и наименование валюты из словаря"""
-    return f'{cash["operationAmount"]["amount"]} {cash["operationAmount"]["amount"]["name"]}'
+    return f'{cash["operationAmount"]["amount"]} {cash["operationAmount"]["currency"]["name"]}'
 
 
 def get_main(num_operations=5):
@@ -52,5 +52,5 @@ def get_main(num_operations=5):
         if operation["description"] != "Открытие вклада":
             print(get_num(operation["from"]) + " -> ", end="")
         print(get_num(operation["to"]))
-        print(get_sum(operation), "\n")
+        print(get_sum(operation),"\n")
         num_operations -= 1
