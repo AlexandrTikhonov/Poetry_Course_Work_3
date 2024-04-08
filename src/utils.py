@@ -33,3 +33,8 @@ def get_num(num):
     else:
         card_name = " ".join(reg[:-1])
         return card_name + ' ' + reg[-1][:4] + ' ' + reg[-1][4:6] + '** **** ' + reg[-1][-4:]
+
+
+def get_sum(cash):
+    """Эта функция возвращает сумму и наименование валюты из словаря"""
+    return f'{cash["operationAmount"]["amount"]} {cash["operationAmount"]["amount"]["name"]}'
