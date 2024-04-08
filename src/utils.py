@@ -23,3 +23,13 @@ def sorted_date(json_file):
 def get_date(date):
     """Эта функция преобразует дату в короткий вид"""
     return f"{date[8:10]}.{date[5:7]}.{date[:4]}"
+
+
+def get_num(num):
+    """Эта функция обрабатывает строку с информацией о номере счета или карты, скрывая часть цифр."""
+    reg = num.split()
+    if reg[0] == "Счет":
+        return 'Счет **' + num[-4:]
+    else:
+        card_name = " ".join(reg[:-1])
+        return card_name + ' ' + reg[-1][:4] + ' ' + reg[-1][4:6] + '** **** ' + reg[-1][-4:]
