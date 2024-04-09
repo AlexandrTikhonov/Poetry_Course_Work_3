@@ -23,6 +23,10 @@ def test_getting_file():
     assert getting_file(test_path) != []
 
 
+def test_filtration_list(operations_fixture):
+    assert len(filtration_list(operations_fixture)) == 4
+
+
 
 
 
