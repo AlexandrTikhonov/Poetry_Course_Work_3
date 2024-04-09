@@ -1,5 +1,4 @@
 import json
-import os
 from datetime import datetime
 
 
@@ -42,10 +41,7 @@ def get_sum(cash):
 
 
 def get_main(num_operations=5):
-    file_name = "operations.json"
-    load_file = getting_file(file_name)
-    filtered_file = filtration_list(load_file)
-    sorted_file = sorted_date(filtered_file)
+    sorted_file = sorted_date(filtration_list( getting_file("operations.json")))
     for operation in sorted_file:
         if num_operations == 0:
             break
