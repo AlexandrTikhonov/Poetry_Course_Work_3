@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="442b21c8-5250-4743-aead-2c8a327b9528" name="Changes" comment="add po">
-      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="442b21c8-5250-4743-aead-2c8a327b9528" name="Changes" comment="add">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_operations.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_operations.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +36,7 @@
   "keyToString": {
     "Python tests.Python tests for test_utils.test_filtration_list.executor": "Run",
     "Python tests.Python tests for test_utils.test_getting_file.executor": "Run",
+    "Python tests.Python tests for test_utils.test_sorted_date.executor": "Run",
     "Python tests.Python tests in test_utils.py.executor": "Run",
     "Python.config.executor": "Run",
     "Python.main.executor": "Run",
@@ -57,28 +51,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python tests.Python tests in test_utils.py">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Poetry_Course_Work_3" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Poetry_Course_Work_3" />
       <option name="ENV_FILES" value="" />
@@ -131,6 +103,21 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_utils.test_sorted_date" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Poetry_Course_Work_3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_utils.test_sorted_date&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests in test_utils.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Poetry_Course_Work_3" />
       <option name="ENV_FILES" value="" />
@@ -149,10 +136,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Python tests in test_utils.py" />
+        <item itemvalue="Python tests.Python tests for test_utils.test_sorted_date" />
         <item itemvalue="Python tests.Python tests for test_utils.test_filtration_list" />
         <item itemvalue="Python tests.Python tests for test_utils.test_getting_file" />
         <item itemvalue="Python.utils" />
-        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -276,7 +263,39 @@
       <option name="project" value="LOCAL" />
       <updated>1712619693798</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add gitignore">
+      <option name="closed" value="true" />
+      <created>1712625313171</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1712625313171</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add fixture">
+      <option name="closed" value="true" />
+      <created>1712625364021</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1712625364022</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add test_filtration_list">
+      <option name="closed" value="true" />
+      <created>1712625798202</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1712625798202</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add test_sorted_date">
+      <option name="closed" value="true" />
+      <created>1712626633187</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1712626633187</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -289,12 +308,16 @@
     <MESSAGE value="fix def get_sum(cash):" />
     <MESSAGE value="fix JSON" />
     <MESSAGE value="fix main.py" />
-    <MESSAGE value="add gitignore" />
     <MESSAGE value="add def getting_file(file_name):" />
     <MESSAGE value="add test_operations.json" />
-    <MESSAGE value="add po" />
     <MESSAGE value="add test_getting_file" />
-    <option name="LAST_COMMIT_MESSAGE" value="add test_getting_file" />
+    <MESSAGE value="add gitignore" />
+    <MESSAGE value="add po" />
+    <MESSAGE value="add fixture" />
+    <MESSAGE value="add test_filtration_list" />
+    <MESSAGE value="add" />
+    <MESSAGE value="add test_sorted_date" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test_sorted_date" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
