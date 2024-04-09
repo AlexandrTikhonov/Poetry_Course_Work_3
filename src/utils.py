@@ -48,6 +48,5 @@ def get_main(num_operations=5):
         print(get_date(operation["date"]), operation["description"])
         if operation["description"] != "Открытие вклада":
             print(get_num(operation["from"]) + " -> ", end="")
-        print(get_num(operation["to"]))
-        print(get_sum(operation),"\n")
+        print(get_num(operation["to"]), '\n' + get_sum(operation), '\n')
         num_operations -= 1
